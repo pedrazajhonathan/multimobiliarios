@@ -36,9 +36,16 @@
                     <p>soluciones para tu oficina</p>
                 </div>
             </div>
-            <div class="link">
-                <img src="astess/whatsapp.png" alt="imagen1">
-                <a href="https://wa.me/584120556265">contactanos</a>  
+            <div id="link" class="link">
+                <a href="https://wa.me/584120556265">
+                    <img src="astess/whatsapp.png" alt="imagen1">
+                </a>  
+                <a href="">
+                    <img src="astess/icons8-facebook-nuevo-48.png" alt="">
+                </a>
+                <a href="">
+                    <img src="astess/icons8-instagram-48.png" alt="">
+                </a>
             </div>
         </div>
     </header>
@@ -247,17 +254,23 @@
         let cerrar = document.getElementById("cerrar")
         let container = document.getElementById("container")
 
+
         abrir.addEventListener("click" , () => {
             abrir.style.display = "none"
             cerrar.style.display = "block"
             container.style.width = "100vw"
             container.style.transitionDuration = ".7s"
+            document.body.style.backgroundColor = "black"
+            let link = document.getElementById("link")
+            link.style.zIndex = "-1"
         })
         cerrar.addEventListener("click" , () => {
             cerrar.style.display = "none"
             abrir.style.display = "block"
             container.style.width = "0vw"
             container.style.transitionDuration = ".1s"
+            document.body.style.backgroundColor = "transparent"
+            link.style.zIndex = "1"
         })
     </script>
 </body>

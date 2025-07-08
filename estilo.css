@@ -194,6 +194,7 @@
         }
         .link img{
             width: 30px;
+            object-fit: contain;
         }
         .link a{
             color: #fff;
