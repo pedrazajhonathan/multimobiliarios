@@ -29,12 +29,15 @@
                     <a href="piramides.html">pirámides</a>
                     <a href="archiveros.html">archivadores</a>
                 </div>
-                <img src="menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" id="abrir" alt="">
-                <img src="close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" id="cerrar" alt="">
-                <div class="exito">
-                    <h1>más que muebles</h1>
-                    <p>soluciones para tu oficina</p>
+                <div id="padremenu" class="padremenu">
+                    <div ></div>
+                    <div ></div>
+                    <div ></div>
                 </div>
+            </div>
+            <div class="exito">
+                <h1>más que muebles</h1>
+                <p>soluciones para tu oficina</p>
             </div>
             <div id="link" class="link">
                 <a href="https://wa.me/584120556265">
@@ -269,28 +272,17 @@
 
 
 
-        let abrir = document.getElementById("abrir")
-        let cerrar = document.getElementById("cerrar")
+        let padremenu = document.getElementById("padremenu")
         let container = document.getElementById("container")
 
-
-        abrir.addEventListener("click" , () => {
-            abrir.style.display = "none"
-            cerrar.style.display = "block"
-            container.style.width = "100vw"
-            container.style.transitionDuration = ".7s"
-            document.body.style.backgroundColor = "black"
+        padremenu.addEventListener("click" , () => {
+            padremenu.classList.toggle("menu1")
+            container.classList.toggle("ancho")
+            container.style.transitionDuration= ".3s"
             let link = document.getElementById("link")
-            link.style.zIndex = "-1"
+            link.classList.toggle("opacidad")
         })
-        cerrar.addEventListener("click" , () => {
-            cerrar.style.display = "none"
-            abrir.style.display = "block"
-            container.style.width = "0vw"
-            container.style.transitionDuration = ".1s"
-            document.body.style.backgroundColor = "transparent"
-            link.style.zIndex = "1"
-        })
+     
     </script>
 </body>
 </html>
