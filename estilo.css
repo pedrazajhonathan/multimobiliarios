@@ -27,14 +27,169 @@
             top: 0;
             left: 0;
             position: absolute;
-     
+            
+        }
+
+
+        /* colocando las imagenes */
+
+        .articulo5{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            gap: 0;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        .hijo2{
+            width: 49%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+            align-items: center;
+            justify-content: center;
+        }
+        .hijo2 h1{
+            animation: mover linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+            font-size: 3.5em;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #054230;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        .hijo2 ul{
+            position: relative;
+        }
+        .hijo2 li{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-transform: capitalize;
+        }
+        .hijo2 p{
+            font-size: 2em;
+            color: #045030;
+            animation: mover linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-transform: capitalize;
+        }
+        .hijo2 button{
+            width: 200px;
+            height: 50px;
+         
+            border-radius: 40px;
+            border-color: transparent;
+            background-color: #054230;
+            color: #fff;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.6em;
+            text-transform: capitalize;
+            margin-top: 40px;
+        }
+        .hijo3{
+            width: 49%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            align-items: center;
+            justify-content: end;
+        }
+        .hijo3 img{
+            width: 250px;
+            height: 300px;
+            position: absolute;
+            bottom: 100px;
+            z-index: 1;
+            animation: mover linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+            transition: all .3s linear;
+            
+        }
+        @keyframes mover{
+            from{
+                opacity: .3;
+                scale: .4;
+            }
+            to{
+                opacity: 1;
+                scale: 1;
+            }
+        }
+        .hijo3 .masa{
+            width: 90%;
+            height: 250px;
+            border-top-left-radius: 400px;
+            border-bottom-left-radius: 100px;
+            background-image: url(astess/workplace-5517744_1280.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            position: relative;
+            
+        }
+        .masa::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg , #054230 0% ,90% , transparent 100%);
+            background-size: 100%;
+            
+            top: 0;
+            left: 0;
+            border-top-left-radius: 400px;
+            border-bottom-left-radius: 100px;
+            
+        }
+        @media (max-width:500px){
+            .hijo2 h1{
+                font-size: 3em;
+                position: relative;
+                left: 30%;
+            }
+            .hijo2 p{
+                font-size: 2em;
+            }
+            .hijo3 img{
+                width: 150px;
+                bottom: 100px;
+                height: 240px;
+            }
+            .hijo2 button{
+                width: 170px;
+            }
+            .hijo3 .masa{
+                height: 150px;
+                bottom: 60px;
+                
+            } 
+        }
+
+        .padreenlace{
+            width: 100%;
+            height: 80px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            background-color: rgba(5, 60, 73, 0.56);
+            
         }
         .parrafopadre{
             display: flex;
             flex-direction: column;
             gap: 0;
             align-items: center;
-            position: absolute;
+            position: relative;
             z-index: 1;
             width: 200px;
             height: 100px;
@@ -44,7 +199,7 @@
             color: #fff;
             font-weight: bold;
             position: relative;
-            bottom: 35px;
+            bottom: 25px;
             font-family:'Times New Roman', Times, serif;
         }
         .parrafopadre p{
@@ -52,27 +207,19 @@
             font-weight: 800;
             color: #fff;
             position: relative;
-            bottom: 100px;
-        }
-        .padreenlace{
-            width: 100%;
-            height: 80px;
-            position: relative;
-            display: flex;
-            gap: 0;
-            background-color: rgba(5, 60, 73, 0.56);
-            
+            bottom: 90px;
+          
         }
 
         .contenedor{
-            width: 100%;
+            width: 80%;
             height: 100%;
             display: flex;
             gap: 3px;
             align-items: center;
             position: relative;
             overflow: hidden;
-            left: 3%;
+            
             
         }
         #abrir{
@@ -96,7 +243,7 @@
             padding: 10px 5px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-transform:uppercase;
-            left: 20%;
+           
         }
         .contenedor a::before{
             content: "";
@@ -164,7 +311,7 @@
                 justify-content: center;
                 background-color: rgba(10, 49, 85, 0.89);
                 z-index: 1;
-                left: 0%;
+               
             }
             .contenedor a{
                 left: 0%;
@@ -182,12 +329,13 @@
                 cursor: pointer;
             }
             .parrafopadre{
-                top: 10px;
+                position: absolute;
+                left: 10px;
             }
         }
         .link{
             position: absolute;
-            z-index: 1;
+        
             top: 86vh;
             right: 30px;
             display: flex;
@@ -198,10 +346,7 @@
             width: 30px;
             object-fit: contain;
         }
-        .link a{
-            color: #fff;
-            text-transform: capitalize;
-        }
+      
  
         .titulo{
             text-align: center;
@@ -300,87 +445,13 @@
         }
         /* haciendo la dinastia de imagenes con sus caractiristicas */
 
-       
-        .articulodesillas{
-            display: flex;
-            flex-direction: column;
-            gap: 50px;
-            align-items: center;
-            position: relative;
-        }
-        .primerarticulo{
-            width: 90%;
-            height: 400px;
-            background-image: url(astess/3742.jpg);
-            background-size: 100%;
-            border-radius: 150px;
-            display: flex;
-            gap: 40px;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-
-        }
-        .relleno1{
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            border-radius: 150px;
-            background: linear-gradient(90deg , rgba(3, 36, 46, 0.89) 0% , rgba(0, 0, 255, 0) 100%);
-            background-size: 200% 100%;
-        }
-    
-        .imagendesilla{
-            width: 45%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 1;
-            position: relative;
-        }
-        .imagendesilla img{
-            width: 70%;
-            height: 85%;
-            border-radius: 30px;
-            opacity: 1;
-        }
-        .imagendesilla a{
-            width: 100%;
-            height: 100%;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .caracteristicas{
-            z-index: 1;
-        }
-        
-        .caracteristicas h1{
-            font-size: 3em;
-            font-weight: 800;
-            color: #fff;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            text-transform: capitalize;
-        }
-        .caracteristicas p{
-            text-transform: capitalize;
-            font-size: 1.5em;
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            color: #fff;
-        }
-        .caracteristicas ul li{
-            color: #fff;
-            text-transform: capitalize;
-        }
+  
         .padremenu{
             width: 40px;
             height: 40px;
             display: flex;
             flex-direction: column;
-            gap: 9.3px;
+            gap: 10px;
             position: absolute;
             top: 25px;
             right: 20px;
@@ -389,7 +460,7 @@
         }
         .padremenu div{
             width: 100%;
-            height: 5px;
+            height: 3px;
             background-color: #fff;
             transition: all .3s linear;
             transform-origin: left;
@@ -442,16 +513,10 @@
                 height: 70%;
                 border-radius: 10px;
             }
-            .opacidad{
-                z-index: -1;
-            }
+            
 
         }
-        @media (min-width:1100px){
-            .primerarticulo{
-                width: 75%;
-            }
-        }
+      
 
         .footer h2{
             font-size: 1.1em;
