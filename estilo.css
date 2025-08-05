@@ -59,7 +59,7 @@
             animation-range: entry 0% cover 40%;
             font-size: 3.5em;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            color: #054230;
+            color: #025a70;
             text-align: center;
             text-transform: capitalize;
         }
@@ -72,7 +72,7 @@
         }
         .hijo2 p{
             font-size: 2em;
-            color: #045030;
+            color: #03484d;
             animation: mover linear;
             animation-timeline: view();
             animation-range: entry 0% cover 40%;
@@ -85,7 +85,7 @@
          
             border-radius: 40px;
             border-color: transparent;
-            background-color: #054230;
+            background-color: #045458;
             color: #fff;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 1.6em;
@@ -152,7 +152,7 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg , #054230 0% ,90% , transparent 100%);
+            background: linear-gradient(90deg , #035b61 0% ,85% , transparent 100%);
             background-size: 100%;
             
             top: 0;
@@ -321,7 +321,6 @@
             .contenedor a{
                 left: 0%;
             }
-           
             .parrafopadre{
                 position: absolute;
                 left: 10px;
