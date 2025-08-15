@@ -575,7 +575,7 @@
             height: 60px;
             position: relative;
             bottom: 0;
-            background-color: transparent;
+            background-color: red;
             border-radius: 10px;
             overflow: hidden;
             font-size: 1.4em;
