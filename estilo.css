@@ -82,8 +82,8 @@
         .hijo2 button{
             width: 200px;
             height: 50px;
-         
-            border-radius: 40px;
+            transform: skew(-15deg);
+            border-radius: 10px;
             border-color: transparent;
             background-color: #045458;
             color: #fff;
@@ -575,7 +575,7 @@
             height: 60px;
             position: relative;
             bottom: 0;
-            background-color: transparent;
+            background-color: #fff;
             border-radius: 10px;
             overflow: hidden;
             z-index: 1;
