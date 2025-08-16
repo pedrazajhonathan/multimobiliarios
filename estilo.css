@@ -4,8 +4,6 @@
             box-sizing: border-box;
             background-color: #ffffffd0;
             overflow-x: hidden;
-            overflow: hidden;
-            overflow-y: hidden;
         }
         .padre{
             width: 100vw;
@@ -86,13 +84,19 @@
             height: 50px;
             transform: skew(-15deg);
             border-radius: 10px;
-            border-color: transparent;
-            background-color: #045458;
-            color: #fff;
+            border-color: #03484d;
+            background-color: #ffffff;
+            color: #032f4dff;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 1.6em;
             text-transform: capitalize;
             margin-top: 40px;
+            cursor: pointer;
+        }
+        .hijo2 button:hover{
+            background-color: #03484d;
+            color: #fff;
+            transition: all .1s linear;
         }
         .hijo3{
             width: 50%;
@@ -167,7 +171,7 @@
             .hijo2 h1{
                 font-size: 3em;
                 position: relative;
-                left: 30%;
+                left: 35%;
             }
             .hijo2 p{
                 font-size: 2em;
@@ -573,17 +577,18 @@
             justify-content: center;
         }
         .padrebotom button{
-            width: 120px;
-            height: 60px;
+            width: 90px;
+            height: 40px;
             position: relative;
             bottom: 0;
             background-color: #fff;
-            border-radius: 10px;
+            border-radius: 5px;
+            transform: skew(-10deg);
             overflow: hidden;
             z-index: 1;
-            font-size: 1.4em;
-            color: #000000;
-            font-weight: 700;
+            font-size: 1.2em;
+            color: #043063;
+            font-weight: 400;
             border-color: transparent;
             box-shadow:  0 0 10px black;
             transition: all .3s linear;
@@ -600,7 +605,7 @@
             height: 70px;
             background-color: rgba(30, 92, 117, 0.932);
             transition: all .3s linear;
-            border-radius: 10px;
+            border-radius: 5px;
             transform: skew(-10deg);
             z-index: -1;
             animation: trans 5s linear infinite;
@@ -618,6 +623,9 @@
             width: 100%;
             animation: none;
             transform: skew(0deg);
+        }
+        .padrebotom button:hover{
+            color: #fff;
         }
         .padrebotom button:active{
             transform: scale(.8);
