@@ -91,15 +91,9 @@
             height: 50px;
             transform: skew(-15deg);
             border-radius: 10px;
-<<<<<<< HEAD
             border-color: #03484d;
             background-color: #ffffff;
             color: #032f4dff;
-=======
-            border-color: transparent;
-            background-color: #025b8b;
-            color: #fff;
->>>>>>> ramab
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 1.6em;
             text-transform: capitalize;
@@ -217,8 +211,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 70px;
             background-color: rgba(5, 60, 73, 0);
+            gap: 70px;
         }
         .parrafopadre{
             display: flex;
