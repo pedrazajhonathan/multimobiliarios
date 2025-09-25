@@ -334,6 +334,9 @@
                 position: absolute;
                 left: 10px;
             }
+            .parrafopadre p{
+                font-size: 1em;
+            }
         }
         .link{
             position: absolute;
