@@ -16,8 +16,6 @@
 <body>
     <header>
         <div class="padre">
-            <video src="astess/fondo escritorio (1).mp4" autoplay loop muted></video>
-            <div class="relleno"></div>
             <div id="menu" class="padreenlace">
                 <div class="parrafopadre">
                     <h1>MULTI</h1>
@@ -39,24 +37,31 @@
                     <div ></div>
                 </div>
             </div>
-            <div class="exito">
-                <h1>transformamos</h1>
-                <p>tu espacio de trabajo</p>
-            </div>
-            <div id="link" class="link">
-                <a href="https://wa.me/584120556265">
-                    <img src="astess/whatsapp.png" alt="imagen1">
-                </a>  
-                <a href="https://www.facebook.com/100085017860406/posts/423209600522965/?mibextid=rS40aB7S9Ucbxw6v">
-                    <img src="astess/icons8-facebook-nuevo-48.png" alt="">
-                </a>
-                <a href="https://www.instagram.com/multimobiliarioshym/?__pwa=1">
-                    <img src="astess/icons8-instagram-48.png" alt="">
-                </a>
-                <a href="https://listado.mercadolibre.com.ve/_CustId_38421137?item_id=MLV853459594&category_id=MLV413197&seller_id=38421137&client=recoview-selleritems&recos_listing=true">
-                    <img src="astess/mercadolibre.svg"   id="holamundo" alt="" style="background-color: aliceblue; padding: 1px; border-radius: 3px;">
-                </a>
-            </div>
+            <div class="informacion">
+                <div class="exito">
+                    <h1 id="titulo"></h1>
+                    <p>tu espacio de trabajo</p>
+                </div>
+                <div class="vision">
+                    <p>somos una empresa de Multimobiliarios con mas de 10 años de experiencia en la rama, y aqui te brindamos los mejores productos del mercado</p>
+                </div>
+                <div id="link" class="link">
+                    <a href="https://wa.me/584120556265">
+                        <img src="astess/whatsapp.png" alt="imagen1">
+                    </a>  
+                    <a href="https://www.facebook.com/100085017860406/posts/423209600522965/?mibextid=rS40aB7S9Ucbxw6v">
+                        <img src="astess/icons8-facebook-nuevo-48.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/multimobiliarioshym/?__pwa=1">
+                        <img src="astess/icons8-instagram-48.png" alt="">
+                    </a>
+                    <a href="https://listado.mercadolibre.com.ve/_CustId_38421137?item_id=MLV853459594&category_id=MLV413197&seller_id=38421137&client=recoview-selleritems&recos_listing=true">
+                        <img src="astess/mercadolibre.svg"   id="holamundo" alt="" style="background-color: aliceblue; padding: 1px; border-radius: 3px;">
+                    </a>
+                </div>
+            </div>z
+            <div class="relleno"></div>
+            <img class="img_fondo" src="astess/imagense sin fondo/ejecutiva.png" alt="img_fodo">
         </div>
     </header>
     <section>
@@ -236,7 +241,6 @@
                 <img  id="imagen3" src="astess/recursos/presidencial oxford.jpg" alt="oxford">
                 <img  id="imagen4" src="astess/recursos/trendy ejecutiva.jpg" alt="trendy">
                 <img  id="imagen5" src="astess/recursos/presidencial stanford.jpg" alt="stanford">
-                <img  id="imagen6" src="astess/recursos/escritorio 4.jpg" alt="escritorio presidencial">
                 <img  id="imagen7" src="astess/estantes metalicos/estante 2.jpg" alt="estantes">
                 <img  id="imagen8" src="astess/sillas de hogar/IMG_20250508_211827.jpg" alt="silla de hogar">
                 <img id="imagen9"src="astess/recursos/silla visitante 2.jpg" alt="visitante">
@@ -305,6 +309,25 @@
             container.style.transitionDuration= ".3s"
            
         })
+
+        let titulo = document.getElementById("titulo")
+        let texto = "Transformamos"
+        let speed = 200
+        let i = 0
+
+ 
+         
+        function hola(){
+            if(i < texto.length){
+                titulo.textContent += texto.charAt(i)
+                i++
+            }
+    
+        }
+
+        setInterval(hola, speed)
+
+
      
     </script>
 </body>
