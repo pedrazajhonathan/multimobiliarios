@@ -12,6 +12,14 @@
             margin-bottom: 80px;
             display: flex;
         }
+        #holamundo2{
+            width: 500px;
+            height: 400px;
+            position: absolute;
+            z-index: 1;
+            right: 40px;
+            top: 10%;
+        }
         video{
             object-fit: cover;
             width: 100%;
