@@ -15,12 +15,200 @@
         }
         .padre::before{
             content: "";
-            background-color: rgba(0, 0, 0, 0.644);
+            background-color: rgba(39, 111, 129, 0.644);
             width: 100%;
             height: 100%;
             left: 0;
             top: 0;
             position: absolute;
+        }
+        .padreenlace{
+            width: 100%;
+            height: 80px;
+            position: relative;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(5, 60, 73, 0);
+            gap: 70px;
+        }
+        .parrafopadre{
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            
+        }
+        .parrafopadre h1{
+            font-size: 3em;
+            color: #ffffff;
+            font-weight: bold;
+            position: relative;
+            font-family:'Times New Roman', Times, serif;
+            margin: 0;
+            animation: cambiar linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 95%;
+        }
+        .parrafopadre p{
+            font-size: 1em;
+            margin: 0;
+            font-weight: 300;
+            color: #ffffff;
+            position: relative;
+            animation: cambiar linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 95%;
+        }
+
+        .contenedor{
+            width: 70%;
+            height: 100%;
+            display: flex;
+            gap: 3px;
+            align-items: center;
+            position: relative;
+            overflow: hidden; 
+        }
+        
+        .contenedor a{
+            text-decoration: none;
+            color: #ffffff;
+            position: relative;
+            padding: 10px 5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-transform:capitalize;
+            animation: cambiar linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 95%;
+            
+        }
+        
+        
+        .contenedor a::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background-color: #ffffff;
+            transition: all .3s linear;
+        }
+        
+        .contenedor a:hover::before{
+            width: 100%;
+            left: 0;
+        }
+        
+        @media (max-width:500px){
+            
+            .padreenlace{
+                position: static;
+                height: 15%;
+            }
+            .contenedor{
+                position: absolute;
+                height: 85vh;
+                width: 0vw;
+                bottom: 0;
+                right: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+                justify-content: center;
+                background-color: rgb(7, 124, 160);
+                z-index: 1;
+                border-top-left-radius: 100px;
+                border-bottom-left-radius: 100px;
+                
+                
+            }
+            .contenedor a{
+                left: 0%;
+            }
+            .parrafopadre{
+                position: absolute;
+                left: 10px;
+            }
+            .parrafopadre p{
+                font-size: 1em;
+            }
+        }
+        .padremenu{
+            width: 40px;
+            height: 40px;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            position:absolute;   
+            right: 20px;
+            cursor: pointer;
+        }
+        .padremenu div{
+            width: 100%;
+            height: 3px;
+            background-color: #fff;
+            transition: all .3s linear;
+            transform-origin: left;
+        }
+       
+
+
+        /* ya esta listo */
+
+        @media (max-width:500px){
+            .padremenu{
+                display: flex;
+                position: absolute;
+            }
+            .menu1 div:nth-child(1){
+                transform: rotate(45deg);
+            }
+            .menu1 div:nth-child(2){
+                opacity: 0;
+            }
+            .menu1 div:nth-child(3){
+                transform: rotate(-45deg);
+            }
+            .ancho{
+                width: 50%;
+            }
+            .primerarticulo{
+                width: 87%;
+                height: 250px;
+                gap: 0px;
+                flex-wrap: nowrap;
+            }
+            .caracteristicas h1{
+                font-size: 1em;
+                text-transform: capitalize;
+
+            }
+            .caracteristicas p{
+                font-size: .5em;
+                text-transform: capitalize;
+
+            }
+            .caracteristicas ul li{
+                font-size: .4em;
+            }
+            .articulodesillas{
+                position: relative;
+            }
+            .imagendesilla img{
+                width: 70%;
+                height: 70%;
+                border-radius: 10px;
+            }
+            
+
         }
         #holamundo2{
             width: 500px;
@@ -30,13 +218,7 @@
             right: 40px;
             top: 10%;
         }
-        video{
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-        }
+
         /* colocando las imagenes */
         .informacion{
             width: 50%;
@@ -56,7 +238,7 @@
             gap: 0;
         }
         .exito h1{
-            color: #b8b8b8;
+            color: #ffffff;
             font-size: 4em;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             letter-spacing: 2px;            
@@ -64,7 +246,7 @@
             margin: 4px;
         }
         .exito p{
-            color: #bdbdbd;
+            color: #ffffff;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             margin: 4px;
             font-size: 3em;
@@ -76,7 +258,7 @@
         }
         .vision p{
             text-align: center;
-            color: #bebebe;
+            color: #ffffff;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             text-transform: capitalize;
         }
@@ -105,7 +287,7 @@
             right: 0;
             border-bottom-left-radius: 100px;
             border-top-left-radius: 400px;
-            background-color: #7575759c;
+            background-color: #386ea09c;
         }
         @media (max-width:500px){
             .img_fondo{
@@ -160,7 +342,7 @@
             animation-range: entry 0% cover 40%;
             font-size: 3.5em;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #373739;
+            color: #009efa;
             text-align: center;
             text-transform: capitalize;
         }
@@ -170,10 +352,11 @@
         .hijo2 li{
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             text-transform: capitalize;
+            color: #009efa;
         }
         .hijo2 p{
             font-size: 2em;
-            color: #373739;
+            color: #009efa;
             animation: mover linear;
             animation-timeline: view();
             animation-range: entry 0% cover 40%;
@@ -184,10 +367,10 @@
             width: 200px;
             height: 50px;
             transform: skew(-15deg);
-            border-radius: 10px;
-            border-color: #03484d;
-            background-color: #e9e9e9;
-            color: #373739;
+            border-radius: 50px;
+            border-color:#009efa;
+            background-color: #eeeeee;
+            color: #009efa;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 1.6em;
             text-transform: capitalize;
@@ -195,7 +378,7 @@
             cursor: pointer;
         }
         .hijo2 button:hover{
-            background-color: #373739;
+            background-color: #009efa;
             color: #fff;
             transition: all .1s linear;
         }
@@ -259,9 +442,8 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg , #373739 0% ,85% , transparent 100%);
+            background: linear-gradient(90deg , #56b8f1 0% ,70% , transparent 100%);
             background-size: 100%;
-            
             top: 0;
             left: 0;
             border-top-left-radius: 400px;
@@ -299,204 +481,17 @@
                 
             } 
         }
-        .padreenlace{
-            width: 100%;
-            height: 80px;
-            position: relative;
-            top: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: rgba(5, 60, 73, 0);
-            gap: 70px;
-        }
-        .parrafopadre{
-            display: flex;
-            flex-direction: column;
-            gap: 0;
-            align-items: center;
-            position: relative;
-            z-index: 1;
-            
-        }
-        .parrafopadre h1{
-            font-size: 3em;
-            color: #c0c0c0;
-            font-weight: bold;
-            position: relative;
-            font-family:'Times New Roman', Times, serif;
-            margin: 0;
-            animation: cambiar linear;
-            animation-timeline: view();
-            animation-range: entry 0% cover 95%;
-        }
-        .parrafopadre p{
-            font-size: 1em;
-            margin: 0;
-            font-weight: 300;
-            color: #b1b1b1;
-            position: relative;
-            animation: cambiar linear;
-            animation-timeline: view();
-            animation-range: entry 0% cover 95%;
-        }
-
-        .contenedor{
-            width: 70%;
-            height: 100%;
-            display: flex;
-            gap: 3px;
-            align-items: center;
-            position: relative;
-            overflow: hidden; 
-        }
-      
-        .contenedor a{
-            text-decoration: none;
-            color: #a8a8a8;
-            position: relative;
-            padding: 10px 5px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            text-transform:capitalize;
-            animation: cambiar linear;
-            animation-timeline: view();
-            animation-range: entry 0% cover 95%;
-           
-        }
-  
-
-        .contenedor a::before{
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 0;
-            height: 3px;
-            background-color: #a5a5a5;
-            transition: all .3s linear;
-        }
-    
-        .contenedor a:hover::before{
-            width: 100%;
-            left: 0;
-        }
-        
-        @media (max-width:500px){
- 
-            .padreenlace{
-                position: static;
-                height: 15%;
-            }
-            .contenedor{
-                position: absolute;
-                height: 85vh;
-                width: 0vw;
-                bottom: 0;
-                right: 0;
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-                align-items: center;
-                justify-content: center;
-                background-color: rgba(36, 36, 36, 0.733);
-                z-index: 1;
-                border-top-left-radius: 100px;
-                border-bottom-left-radius: 100px;
-                
-               
-            }
-            .contenedor a{
-                left: 0%;
-            }
-            .parrafopadre{
-                position: absolute;
-                left: 10px;
-            }
-            .parrafopadre p{
-                font-size: 1em;
-            }
-        }
-      
- 
         .titulo{
             text-align: center;
             font-size: 3em;
             font-weight: 900;
-            color: rgba(10, 63, 80, 0.904);
+            color: #009efa;
             position: relative;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-transform: capitalize;
        
         }
-    
-        .enlace{
-            width: 100%;
-            height: 11%;
-            background-color: blue;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: all .3s linear;
-            position: relative;
-            top: 20px;
-        }
-
-        .enlace:hover{
-            transform: scale(1.1);
-        }
-        .enlace a{
-            color: #fff;
-            font-weight: 600;
-            padding: 10px 40px;
-            font-size: 1.2em;
-        }
-      
-        .enlace1{
-            width: 100%;
-            height: 11%;
-            background-color: rgb(100, 100, 112);
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: all .3s linear;
-            position: relative;
-            bottom: 50px;
-        }
-        .enlace1:hover{
-            transform: scale(1.1);
-        }
-        .enlace1 a{
-            color: #fff;
-            font-weight: 600;
-            padding: 10px 50px;
-            font-size: 1.2em;
-        }
-        .enlace1{
-            width: 100%;
-            height: 11%;
-            background-color: blue;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: all .3s linear;
-            position: relative;
-            bottom: 50px;
-        }
-        .enlace1:hover{
-            transform: scale(1.1);
-        }
-        .enlace1 a{
-            color: #fff;
-            font-weight: 600;
-            padding: 10px 50px;
-            font-size: 1.2em;
-        }
+       
         .footer{
             display: flex;
             align-items: end;
@@ -508,7 +503,7 @@
         footer{
             width: 100%;
             position: relative;
-            background-color: rgba(6, 54, 58, 0.863);
+            background-color: #036197;
             display: flex;
             align-items: end;
             
@@ -516,78 +511,6 @@
         /* haciendo la dinastia de imagenes con sus caractiristicas */
 
   
-        .padremenu{
-            width: 40px;
-            height: 40px;
-            display: none;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            position:absolute;
-          
-            right: 20px;
-            cursor: pointer;
-        }
-        .padremenu div{
-            width: 100%;
-            height: 3px;
-            background-color: #fff;
-            transition: all .3s linear;
-            transform-origin: left;
-        }
-       
-
-
-        /* ya esta listo */
-
-        @media (max-width:500px){
-            .padremenu{
-                display: flex;
-                position: absolute;
-            }
-            .menu1 div:nth-child(1){
-                transform: rotate(45deg);
-            }
-            .menu1 div:nth-child(2){
-                opacity: 0;
-            }
-            .menu1 div:nth-child(3){
-                transform: rotate(-45deg);
-            }
-            .ancho{
-                width: 50%;
-            }
-            .primerarticulo{
-                width: 87%;
-                height: 250px;
-                gap: 0px;
-                flex-wrap: nowrap;
-            }
-            .caracteristicas h1{
-                font-size: 1em;
-                text-transform: capitalize;
-
-            }
-            .caracteristicas p{
-                font-size: .5em;
-                text-transform: capitalize;
-
-            }
-            .caracteristicas ul li{
-                font-size: .4em;
-            }
-            .articulodesillas{
-                position: relative;
-            }
-            .imagendesilla img{
-                width: 70%;
-                height: 70%;
-                border-radius: 10px;
-            }
-            
-
-        }
       
 
         .footer h2{
@@ -675,7 +598,7 @@
             left: 0;
             width: 50%;
             height: 70px;
-            background-color: rgb(145, 145, 145);
+            background-color: rgb(10, 133, 214);
             transition: all .3s linear;
             border-radius: 5px;
             transform: skew(-10deg);
