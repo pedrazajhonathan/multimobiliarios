@@ -108,6 +108,7 @@ body{
     color: aliceblue;
     font-size: 2.4em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: capitalize;
   
 }
 .informacion .botom_enlace{
@@ -199,18 +200,27 @@ body{
     color: blue;
     text-align: center;
     margin-bottom: 4px;
+    animation:  mover linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 .hijo1 p{
     font-size: 2em;
     font-weight: bold;
     color: blue;
     font-style: italic;
+    animation:  mover linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 .hijo1 ul{
     color: blue;
     font-style: italic;
     margin-bottom: 50px;
     font-weight: 800;
+    animation:  mover linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 .hijo1 button{
     width: 150px;
@@ -224,6 +234,9 @@ body{
     font-size: 1.4em;
     cursor: pointer;
     transition: all .3s linear;
+    animation:  mover linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 .hijo1 button:hover{
     background-color: blue;
@@ -246,6 +259,9 @@ body{
     border-top-left-radius: 400px;
     border-bottom-left-radius: 60px;
     z-index: -1;
+    animation:  mover linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 .hijo2 .relleno::before{
     content: "";
@@ -262,6 +278,9 @@ body{
     bottom: 5%;
     right: 15%;
     height: 70%;
+    animation:  mover linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 .hijo2 .escritorio{
     width: 55%;
@@ -269,6 +288,16 @@ body{
     bottom: 5%;
     right: 15%;
     height: 50%;
+}
+@keyframes mover {
+    from{
+        opacity: .4;
+        scale: .5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
 }
 
 /*haciendo el responsive de la seccion 1*/
