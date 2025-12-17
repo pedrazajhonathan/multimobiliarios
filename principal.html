@@ -5,18 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="Mt_E4mmQ3dFouLWXP0lHJVqKvJDWte7_WVV4d97tpZk" />
     <title>Multimobiliarios</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Press+Start+2P&display=swap" rel="stylesheet">    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="principal.css">
+    <script src="principal.js" defer></script>
 </head>
 <body>
     <header>
         <div class="padre">
+            <div class="relleno_header"></div>
             <div id="menu" class="padreenlace">
                 <div class="parrafopadre">
                     <h1>MULTI</h1>
@@ -28,26 +24,22 @@
                     <div ></div>
                 </div>
             </div>
-            <div id="container" class="contenedor">
-                <a href="presidencial.html">presidencial</a>
-                <a href="ejecutiva.html">ejecutiva</a>
-                <a href="visitante.html">visitante</a>
-                <a href="hogar.html">hogar</a>
-                <a href="escritorios.html">escritorios</a>
-                <a href="estantes.html">estantes</a>
-                <a href="piramides.html">pirámides</a>
-                <a href="archiveros.html">archivadores</a>
+            <div id="contenedor" class="contenedor">
+                <a href="subpaginas/presidencial.html">presidencial</a>
+                <a href="subpaginas/ejecutiva.html">ejecutiva</a>
+                <a href="subpaginas/visitante.html">visitante</a>
+                <a href="subpaginas/hogar.html">hogar</a>
+                <a href="subpaginas/escritorios.html">escritorios</a>
+                <a href="subpaginas/estantes.html">estantes</a>
+                <a href="subpaginas/piramides.html">pirámides</a>
+                <a href="subpaginas/archiveros.html">archivadores</a>
             </div>
             <div class="informacion">
-                <div class="exito">
-                    <h1 id="titulo"></h1>
-                    <p>tu espacio de trabajo</p>
+                <div class="eslogan">
+                    <p>transformamos tu espacio de trabajo</p>
                 </div>
-                <div class="vision">
-                    <p>Somos una empresa de equipos de oficina y estantería metálica con más de 30 años de experiencia en el ramo, te brindamos los mejores productos y asesoría gratuita</p>
-                </div>
+                <a class="botom_enlace" href="#primera">mas informacion</a>
                 <div id="link" class="link">
-                    <p class="contacto">contáctanos:</p>
                     <a target="_blank" href="https://wa.me/584120556265">
                         <img src="astess/whatsapp.png" alt="imagen1">
                     </a>  
@@ -60,14 +52,12 @@
                     <a href="https://listado.mercadolibre.com.ve/_CustId_38421137?item_id=MLV853459594&category_id=MLV413197&seller_id=38421137&client=recoview-selleritems&recos_listing=true">
                         <img src="astess/mercadolibre.svg"   id="holamundo" alt="" style="background-color: aliceblue; padding: 1px; border-radius: 3px;">
                     </a>
-                </div>
+                </div>    
             </div>
-            <img class="img_fondo" src="astess/imagense sin fondo/ejecutiva.png" alt="img_fodo">
         </div>
-    </header>
-    <section class="seccion">
-        <article class="articulo5" data-aos="fade-left">
-            <div class="hijo2" >
+    </header> 
+    <section id="primera" class="seccion1" data-aos="fade-left">
+            <div class="hijo1" >
                 <h1>sillas presidenciales</h1>
                 <p>características</p>
                 <ul>
@@ -76,19 +66,17 @@
                     <li>apoyo lumbar y cervical</li>
                     <li>base estable</li>
                 </ul>
-                <a href="presidencial.html">
+                <a href="subpaginas/presidencial.html">
                     <button>mas...</button>
                 </a>
             </div>
-            <div class="hijo3">
-                <div  class="masa">
-                    
-                </div>
+            <div class="hijo2">
+                <div class="relleno"></div>
                 <img  src="astess/imagense sin fondo/silla presidencial.png" alt="">
             </div>
-        </article>
-        <article class="articulo5" data-aos="fade-left">
-            <div class="hijo2" >
+    </section>
+    <section class="seccion1" data-aos="fade-left">
+            <div class="hijo1" >
                 <h1>sillas ejecutivas</h1>
                 <p>características</p>
                 <ul>
@@ -97,19 +85,17 @@
                     <li>durabilidad</li>
                     <li>diseño</li>
                 </ul>
-                <a href="ejecutiva.html">
+                <a href="subpaginas/ejecutiva.html">
                     <button>mas...</button>
                 </a>
             </div>
-            <div class="hijo3">
-                <div class="masa" >
-                    
-                </div>
+            <div class="hijo2">
+                <div class="relleno"></div>
                 <img  src="astess/imagense sin fondo/ejecutiva.png" alt="">
             </div>
-        </article>
-        <article class="articulo5" data-aos="fade-left">
-            <div class="hijo2" data-aos="fade-left">
+    </section>
+    <section class="seccion1" data-aos="fade-left">
+            <div class="hijo1">
                 <h1>sillas visitantes</h1>
                 <p>características</p>
                 <ul>
@@ -118,19 +104,17 @@
                     <li>estructura resistente</li>
                     <li>durabilidad</li>
                 </ul>
-                <a href="visitante.html">
+                <a href="subpaginas/visitante.html">
                     <button>mas...</button>
                 </a>
             </div>
-            <div class="hijo3">
-                <div class="masa" data-aos="fade-left">
-                    
-                </div>
-                <img data-aos="fade-left" src="astess/imagense sin fondo/visitante.png" alt="">
+            <div class="hijo2">
+                <div class="relleno"></div>
+                <img src="astess/imagense sin fondo/visitante.png" alt="">
             </div>
-        </article>
-        <article class="articulo5" data-aos="fade-left">
-            <div class="hijo2" data-aos="fade-left">
+    </section>
+    <section class="seccion1" data-aos="fade-left">
+            <div class="hijo1">
                 <h1>sillas de hogar</h1>
                 <p>características</p>
                 <ul>
@@ -139,19 +123,17 @@
                     <li>comodidad</li>
                     <li>estilo</li>
                 </ul>
-                <a href="hogar.html">
+                <a href="subpaginas/hogar.html">
                     <button>mas...</button>
                 </a>
             </div>
-            <div class="hijo3">
-                <div class="masa" data-aos="fade-left">
-                   
-                </div>
-                <img data-aos="fade-left" src="astess/imagense sin fondo/hogar.png" alt="">
+            <div class="hijo2">
+                <div class="relleno" ></div>
+                <img src="astess/imagense sin fondo/hogar.png" alt="">
             </div>
-        </article>
-        <article class="articulo5" data-aos="fade-left">
-            <div class="hijo2" data-aos="fade-left">
+    </section>
+    <section class="seccion1" data-aos="fade-left">
+            <div class="hijo1" >
                 <h1>escritorios</h1>
                 <p>características</p>
                 <ul>
@@ -160,19 +142,17 @@
                     <li>adaptabilidad</li>
                     <li>durabilidad y resistencia</li>
                 </ul>
-                <a href="escritorios.html">
+                <a href="subpaginas/escritorios.html">
                     <button>mas...</button>
                 </a>
             </div>
-            <div class="hijo3">
-                <div class="masa" data-aos="fade-left">
-                    
-                </div>
-                <img data-aos="fade-left" class="img" src="astess/imagense sin fondo/escritorio.png" alt="">
+            <div class="hijo2">
+                <div class="relleno" ></div>
+                <img class="escritorio" src="astess/imagense sin fondo/escritorio.png" alt="">
             </div>
-        </article>
-        <article class="articulo5" data-aos="fade-left">
-            <div class="hijo2" data-aos="fade-left">
+    </section>
+    <section class="seccion1" data-aos="fade-left">
+            <div class="hijo1">
                 <h1>archivos</h1>
                 <p>características</p>
                 <ul>
@@ -181,19 +161,17 @@
                     <li>almacenamiento</li>
                     <li>movilidad</li>
                 </ul>
-                <a href="archiveros.html">
+                <a href="subpaginas/archiveros.html">
                     <button>mas...</button>
                 </a>
             </div>
-            <div class="hijo3">
-                <div class="masa" data-aos="fade-left" >
-                    
-                </div>
-                <img data-aos="fade-left" src="astess/imagense sin fondo/archivo.png" alt="">
+            <div class="hijo2">
+                <div class="relleno"></div>
+                <img src="astess/imagense sin fondo/archivo.png" alt="">
             </div>
-        </article>
-        <article class="articulo5" data-aos="fade-left">
-            <div class="hijo2" data-aos="fade-left">
+    </section>
+    <section class="seccion1" data-aos="fade-left">
+            <div class="hijo1" >
                 <h1>pirámides</h1>
                 <p>características</p>          
                 <ul>
@@ -202,19 +180,17 @@
                     <li>funcionalidad</li>
                     <li>variedad</li>
                 </ul>
-                <a href="piramides.html">
+                <a href="subpaginas/piramides.html">
                     <button>mas...</button>
                 </a>
             </div>
-            <div class="hijo3">
-                <div class="masa" data-aos="fade-left">
-                    
-                </div>
-                <img data-aos="fade-left" src="astess/imagense sin fondo/piramide.png" alt="">
+            <div class="hijo2">
+                <div class="relleno" ></div>
+                <img src="astess/imagense sin fondo/piramide.png" alt="">
             </div>
-        </article>
-        <article class="articulo5" data-aos="fade-left">
-            <div class="hijo2" data-aos="fade-left" >
+    </section>
+    <section class="seccion1" data-aos="fade-left">
+            <div class="hijo1"  >
                 <h1>Estantes</h1>
                 <p>características</p>          
                 <ul>
@@ -223,33 +199,14 @@
                     <li>accesiblidad</li>
                     <li>organización y orden</li>
                 </ul>
-                <a href="estantes.html">
+                <a href="subpaginas/estantes.html">
                     <button>mas...</button>
                 </a>
             </div>
-            <div class="hijo3">
-                <div class="masa" data-aos="fade-left">
-                    
-                </div>
-                <img data-aos="fade-left" class="img2" src="astess/imagense sin fondo/estantes.png" alt="">
+            <div class="hijo2">
+                <div class="relleno"></div>
+                <img class="img2" src="astess/imagense sin fondo/estantes.png" alt="">
             </div>
-        </article>
-        <p class="titulo">productos más vendidos</p>
-        <article class="carruselimg">
-            <div class="padreimg">
-                <img  id="imagen" src="astess/ejecutiva chicago.jpg" alt="chicago">
-                <img  id="imagen2" src="astess/archivo 4 gabetas.jpg" alt="archivo 4 gabetas">
-                <img  id="imagen3" src="astess/recursos/presidencial oxford.jpg" alt="oxford">
-                <img  id="imagen4" src="astess/recursos/trendy ejecutiva.jpg" alt="trendy">
-                <img  id="imagen5" src="astess/recursos/presidencial stanford.jpg" alt="stanford">
-               
-            </div>
-            <div class="padrebotom">
-                <button id="botom1" class="botom">pausar</button>
-                <button id="botom2" class="botom2">mover</button>
-            </div>
-        </article>
-        
     </section>
     <footer>
         <div class="footer">
@@ -260,79 +217,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
-            duration : 1300
+            duration : 1500
         });
-    </script>
-    <script>
-        
-        let imagen = document.getElementById("imagen")
-        let imagen2 = document.getElementById("imagen2")
-        let imagen3 = document.getElementById("imagen3")
-        let imagen4 = document.getElementById("imagen4")
-        let imagen5 = document.getElementById("imagen5")
-        let imagen6 = document.getElementById("imagen6")
-        let imagen7 = document.getElementById("imagen7")
-        let imagen8 = document.getElementById("imagen8")
-        let imagen9 = document.getElementById("imagen9")
-        let imagen10 = document.getElementById("imagen10")
-        let botom1 = document.getElementById("botom1")
-        let botom2 = document.getElementById("botom2")
-
-        botom1.addEventListener("click", function(){
-           imagen.style.animationPlayState = "paused"
-           imagen2.style.animationPlayState = "paused"
-           imagen3.style.animationPlayState = "paused"
-           imagen4.style.animationPlayState = "paused"
-           imagen5.style.animationPlayState = "paused"
-           imagen6.style.animationPlayState = "paused"
-           imagen7.style.animationPlayState = "paused"
-           imagen8.style.animationPlayState = "paused"
-           imagen9.style.animationPlayState = "paused"
-           imagen10.style.animationPlayState = "paused"
-        })
-        botom2.addEventListener("click", function(){
-           imagen.style.animationPlayState = "running"
-           imagen2.style.animationPlayState = "running"
-           imagen3.style.animationPlayState = "running"
-           imagen4.style.animationPlayState = "running"
-           imagen5.style.animationPlayState = "running"
-           imagen6.style.animationPlayState = "running"
-           imagen7.style.animationPlayState = "running"
-           imagen8.style.animationPlayState = "running"
-           imagen9.style.animationPlayState = "running"
-           imagen10.style.animationPlayState = "running"
-        })
-
-
-        let padremenu = document.getElementById("padremenu")
-        let container = document.getElementById("container")
-
-        padremenu.addEventListener("click" , () => {
-            padremenu.classList.toggle("menu1")
-            container.classList.toggle("ancho")
-            container.style.transitionDuration= ".3s"
-           
-        })
-
-        let titulo = document.getElementById("titulo")
-        let texto = "Transformamos"
-        let speed = 200
-        let i = 0
-
- 
-         
-        function hola(){
-            if(i < texto.length){
-                titulo.textContent += texto.charAt(i)
-                i++
-            }
-    
-        }
-
-        setInterval(hola, speed)
-
-
-     
     </script>
 </body>
 </html>
