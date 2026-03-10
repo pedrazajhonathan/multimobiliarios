@@ -216,7 +216,7 @@ function alejir(i){
         let contenido = document.createElement("div")
         contenido.classList.add("contenido")
 
-        enlace.href = ""
+        enlace.href = "https://wa.me/584120556265"
         imagen_close.src = img_close
         precio.textContent = dat.precio
         enlace.appendChild(imagen_close)
