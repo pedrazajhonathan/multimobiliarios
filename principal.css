@@ -14,7 +14,7 @@ body{
 
 header{
     width: 100vw;
-    height: 60vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,11 +42,15 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: end;
+    gap: 10px;
 }
 .articulo2 p{
     color: rgb(122, 122, 122);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-bottom: 4px;
+    margin: 0;
+}
+.articulo2 .abrir{
+    cursor: pointer;
 }
 .articulo_img{
     position: absolute;
@@ -155,6 +159,7 @@ header{
     margin-bottom: 0;
     margin-top: 4px;
     font-size: 1.5em;
+    text-transform: capitalize;
 }
 .nietos .tipo{
     font-family: Arial, Helvetica, sans-serif;
@@ -182,7 +187,130 @@ header{
     border-radius: 10px;
 }
 
+
+
+
+/* estilos de el cards de informacion*/
+
+.informacion_mas{
+    width: 100vw;
+    height: 90vh;
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: none;
+}
+.informacion_mas > h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    color: black;
+    font-size: 1.8em;
+}
+.direccion{
+    width: 70%;
+    height: 100px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    border-bottom: 1px solid rgb(92, 92, 92);
+}
+.direccion img{
+    width: 20%;
+}
+.dat{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+}
+.dat h1{
+    font-size: .8em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+.dat p{
+    font-size: .9em;
+    color: #7a7a7a;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.horario{
+    width: 100%;
+    height: 46%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(136, 136, 136);
+}
+.box_1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: start;
+    justify-content: center;
+}
+.box_1 h1{
+    font-family:  Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-size: 1em;
+    color: #7a7a7a;
+}
+.box_2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.box_2 h1{
+    font-family:  Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-size: 1em;
+    color: #7a7a7a;
+}
+.contacto{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+}
+.contacto img{
+    width: 50px;
+}
+.tlf h1{
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7a7a7a;
+}
+
+.abrir_1{
+    display: block;
+}
+
+.close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 50px;
+    cursor: pointer;
+}
+
 @media (max-width:490px){
+    header{
+        height: 60vh;
+    }
     .container_1{
         justify-content: none;
     }

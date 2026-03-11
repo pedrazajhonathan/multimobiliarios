@@ -164,13 +164,13 @@ let arreglo_archivo = [
 
 let arreglo_piramidez = [
     {
-        nombre : "piramide",
+        nombre : "pirámide",
         tipo : "lateral-blanco",
         precio : "150$",
         img : "astess/piramides/piramide_lateral__2_-removebg-preview.png", 
     },
     {
-        nombre : "piramide",
+        nombre : "pirámide",
         tipo : "central-blanco",
         precio : "150$",
         img : "astess/piramides/piramide-removebg-preview.png", 
@@ -257,3 +257,19 @@ function borrar_active(){
         enlace.classList.remove("active")
     })
 }
+
+
+// funcion para abrir el cards de informacion
+
+let clo = document.getElementById("close")
+let abrir = document.getElementById("abrir")
+let cards = document.getElementById("cards")
+
+abrir.addEventListener("click" , () => {
+    cards.classList.add("abrir_1")
+})
+
+
+clo.addEventListener("click" , () => {
+    cards.classList.remove("abrir_1")
+})
