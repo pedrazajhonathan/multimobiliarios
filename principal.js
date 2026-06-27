@@ -261,15 +261,20 @@ function borrar_active(){
 
 // funcion para abrir el cards de informacion
 
-let clo = document.getElementById("close")
-let abrir = document.getElementById("abrir")
-let cards = document.getElementById("cards")
-
-abrir.addEventListener("click" , () => {
-    cards.classList.add("abrir_1")
-})
 
 
-clo.addEventListener("click" , () => {
-    cards.classList.remove("abrir_1")
-})
+
+
+function sent(){
+
+    let nombre = document.getElementById("nombre")
+
+    
+    if(nombre.value){
+        alert("su respuesta ha sido enviada correctamente")
+    }else{
+        console.error("hola mudno")
+    }
+
+
+}

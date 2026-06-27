@@ -8,70 +8,154 @@
     <script src="principal.js" defer></script>
 </head>
 <body>
-    <header>
-        <article class="articulo1">
-            <h1>Multimobiliariosh&m</h1>
-        </article>
-        <article class="articulo2">
-            <p>Multimobiliarios</p>
-            <p>♦san felipe, yaracuy</p>
-            <p style="color: rgb(247, 91, 1);" id="abrir" class="abrir">Ver mas...</p>
-        </article>
-        <div class="articulo_img">
-            <img src="astess/foto de logo.jpg" alt="logo">
-        </div>
+     <header>
+        <div class="logo">Multi<span>Mobiliarios</span></div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
     </header>
-    <section class="seccion_1">
-        <div class="container_1">
-            <a id="enlace1" onclick="alejir(0)">presidencial</a>
-            <a id="enlace2" onclick="alejir(1)">ejecutivas</a>
-            <a id="enlace3" onclick="alejir(2)">visitantes</a>
-            <a id="enlace4" onclick="alejir(3)">escritorios</a>
-            <a id="enlace5" onclick="alejir(4)">estantes</a>
-            <a id="enlace6" onclick="alejir(5)">pirámides</a>
-            <a id="enlace7" onclick="alejir(6)">archivos</a>
+    <main class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Transformamos tu espacio<span> elevamos tu estilo.</span></h1>
+            <p>Descubre nuestra colección de multimobiliarios diseñados para adaptarse a la vida moderna. Transforma tu sala en oficina o tu habitación en zona de juegos en un solo movimiento.</p>
+            
+            <div class="btn-container">
+                <a href="#seccion_one" class="btn-secondary">Saber Más</a>
+            </div>
         </div>
-        <div class="container_2">
-            <div id="hijo1" class="hijo1">
+
+        <section id="seccion_one" class="seccion_1">
+            <div class="container_1">
+                <a id="enlace1" onclick="alejir(0)">presidencial</a>
+                <a id="enlace2" onclick="alejir(1)">ejecutivas</a>
+                <a id="enlace3" onclick="alejir(2)">visitantes</a>
+                <a id="enlace4" onclick="alejir(3)">escritorios</a>
+                <a id="enlace5" onclick="alejir(4)">estantes</a>
+                <a id="enlace6" onclick="alejir(5)">pirámides</a>
+                <a id="enlace7" onclick="alejir(6)">archivos</a>
+            </div>
+            <div class="container_2">
+                <div id="hijo1" class="hijo1">
+                    
+                </div>   
+            </div>
+            
+        </section>
+        <section class="nosotros" id="nosotros">
+        <div class="nosotros-container">
+            
+            <div class="nosotros-content">
+                <h2>Quiénes <span>Somos</span></h2>
+                <p class="subtitulo">Redefiniendo los espacios urbanos desde el diseño inteligente.</p>
                 
-            </div>   
+                <p>En <strong>MultiMobiliarios</strong>, creemos que un hogar pequeño no debería limitar tus grandes ideas. Nos dedicamos a diseñar y fabricar soluciones de mobiliario híbrido y multifuncional que transforman metros cuadrados en experiencias de confort.</p>
+                
+                <p>Nuestra misión es fusionar la ingeniería de precisión con la estética contemporánea, logrando que cada pieza de tu hogar cumpla un doble propósito sin sacrificar el estilo ni la durabilidad.</p>
+                
+                <div class="nosotros-stats">
+                    <div class="stat-item">
+                        <h3>+10k</h3>
+                        <p>Espacios optimizados</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Materiales premium</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nosotros-image">
+                <div class="taller-placeholder">
+                    <img src="astess/sillas presidencial/presidencial stanford.jpg" alt="">
+                </div>
+            </div>
         </div>
-        
     </section>
-    <article id="cards" class="informacion_mas">
-        <img id="close" src="astess/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" class="close" alt="close" class="cerrar">
-        <div class="direccion">
-            <img src="astess/foto de logo.jpg" alt="logo">
-            <div class="dat">
-                <h1>Multimobiliariosh&m</h1>
-                <p>San felipe, Yaracuy</p>
+    <section class="contacto" id="contacto">
+        <div class="contacto-container">
+            
+            <div class="contacto-form-box">
+                <h2>Ponte en <span>Contacto</span></h2>
+                <p class="contacto-intro">¿Tienes preguntas sobre nuestros muebles inteligentes o necesitas un diseño a la medida? Escríbenos.</p>
+                
+                <form action="#" method="POST" class="formulario">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" placeholder="ejemplo@correo.com" >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="asunto">¿En qué estás interesado?</label>
+                        <select id="asunto" name="asunto">
+                            <option value="catalogo">Consultar el catálogo</option>
+                            <option value="medida">Muebles a medida / Personalizados</option>
+                            <option value="soporte">Soporte técnico o garantías</option>
+                            <option value="otro">Otro asunto</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje o Detalles del proyecto</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos un poco sobre tu espacio..." required></textarea>
+                    </div>
+                    
+                    <button type="button" class="btn-enviar" onclick="sent()">Enviar Mensaje</button>
+                </form>
             </div>
-        </div>
-        <h1>⌚ horario</h1>
-        <div class="horario">
-                <div class="box_1">
-                    <h1>lunes</h1>
-                    <h1>martes</h1>
-                    <h1>miércoles</h1>
-                    <h1>jueves</h1>
-                    <h1>viernes</h1>
+
+            <div class="contacto-info-box">
+                <div class="social-box">
+                    <h4>Síguenos en nuestras redes</h4>
+                    <div class="social-links">
+                        <a target="_blank" href="https://instagram.com/multimobiliarioshymhernandez" class="social-link">Instagram</a>
+                        <a target="_blank" href="https://wa.me/584120556265?" class="social-link">WhatsApp</a>
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100085017860406" class="social-link">Facebook</a>
+                    </div>
                 </div>
-                <div class="box_2">
-                    <h1>9:00 AM - 5:00 PM</h1>
-                    <h1>9:00 AM - 5:00 PM</h1>
-                    <h1>9:00 AM - 5:00 PM</h1>
-                    <h1>9:00 AM - 5:00 PM</h1>
-                    <h1>9:00 AM - 5:00 PM</h1>
-                </div>
-        </div>
-        <h1>📞 contactos</h1>
-        <div class="contacto">
-            <img src="astess/whatsapp2.png" alt="logo whatsapp">
-            <div class="tlf">
-                <h1>WhatsApp</h1>
-                <h1>0412-0556265</h1>
             </div>
+
         </div>
-    </article>
+    </section>
+    </main>
+    <footer class="sitio-footer">
+        <div class="footer-container">
+            
+            <div class="footer-col brand-col">
+                <div class="footer-logo">Multi<span>Mobiliarios</span></div>
+                <p>Creamos soluciones de mobiliario inteligente y modular para transformar tus espacios y adaptarlos al estilo de vida contemporáneo.</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Explorar</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Soporte</h3>
+                <ul>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Políticas de Envío</a></li>
+                    <li><a href="#">Garantía de Productos</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 MultiMobiliarios. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
