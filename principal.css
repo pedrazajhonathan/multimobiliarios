@@ -11,15 +11,18 @@ body{
 
 
 /* estilos del header */
-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 8%;
+        header {           
             background-color: #ffffff;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: relative;
         }
-
+        .first{
+            display: flex;
+            align-items: center;
+            justify-content:space-around;
+            width: 100%;
+            height: 15vh;
+        }
         .logo {
             font-size: 24px;
             font-weight: bold;
@@ -29,9 +32,14 @@ header {
         .logo span {
             color: #2225e6; /* Toque de color naranja moderno */
         }
-
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
         nav a {
-            margin-left: 20px;
+           
             text-decoration: none;
             color: #555;
             font-weight: 500;
@@ -45,11 +53,9 @@ header {
         /* Sección Principal (Hero) */
         .hero {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 60px 8%;
+            align-items: center;     
             flex-direction: column;
-            min-height: 80vh;
+
             gap: 40px;
         }
 
@@ -116,14 +122,14 @@ header {
 
         /* Diseño Responsivo para Móviles */
         @media (max-width: 768px) {
-            header {
+            .first {
+                height: 15vh;
                 flex-direction: column;
-                gap: 15px;
             }
             .hero {
                 flex-direction: column;
                 text-align: center;
-                padding-top: 30px;
+             
             }
             .hero-content h1 {
                 font-size: 36px;
@@ -149,7 +155,7 @@ header {
     box-sizing: border-box;
 }
 .container_1{
-    width: 100%;
+    width: 80%;
     height: 100px;
     display: flex;
     align-items: center;
@@ -376,16 +382,14 @@ header {
 }
 
 @media (max-width:490px){
-    header{
-        height: 60vh;
-    }
     .container_1{
-        justify-content: none;
+        justify-content:none;
+        width: 100%;
     }
 }
 
 /* style of the we  */
-    .nosotros {
+        .nosotros {
             background-color: #ffffff;
             padding: 80px 8%;
             border-top: 1px solid #eee;
@@ -399,8 +403,9 @@ header {
             max-width: 1200px;
             margin: 0 auto;
         }
-
+        
         .nosotros-content {
+            border-radius: 30px;
             flex: 1;
         }
 
@@ -502,14 +507,14 @@ header {
         .contacto-container {
             display: flex;
             gap: 50px;
-            width: 90vw;
+            width: 90%;
             margin: 0 auto;
             align-items: center;
+            justify-content: center;
         }
 
         .contacto-form-box {
-            
-            width: 95%;
+            width: 90%;
             background: #ffffff;
             padding: 40px;
             border-radius: 15px;
